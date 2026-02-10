@@ -1,4 +1,4 @@
-<img width="1898" height="1025" alt="image" src="https://github.com/user-attachments/assets/e1043818-254c-410d-a350-54c1098eecf8" /># Ex08 Pharmacy Website using Bootstrap
+# Ex08 Pharmacy Website using Bootstrap
 ## Date:
 
 ## AIM:
