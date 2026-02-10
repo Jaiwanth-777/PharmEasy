@@ -62,177 +62,205 @@ Publish the website in the LocalHost.
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedStore Pharmacy</title>
-    <!-- Link Bootstrap CSS from CDN -->
-    <link href="https://cdn.jsdelivr.net" rel="stylesheet">
-    <style>
-        /* Custom styles to ensure uniform image size and center the content */
-        .product-img {
-            height: 180px; /* Uniform height */
-            width: 100%; /* Responsive width */
-            object-fit: cover; /* Ensures images cover the area without distortion */
-            padding: 10px;
-        }
-        .panel-body {
-            text-align: center;
-        }
-        .main-content {
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-        footer {
-            margin-top: 40px;
-            padding: 20px 0;
-            background-color: #f5f5f5;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TrueMeds – Medicine Price Comparison</title>
+
+<!-- Bootstrap 3 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<style>
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #1a73e8 !important;
+}
+
+/* Hero Section */
+.hero {
+    background: #f1f7ff;
+    padding: 60px 0;
+    position: relative;
+}
+.hero h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.hero p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Search Bar */
+.search-bar {
+    max-width: 650px;
+    margin: auto;
+}
+.search-bar input {
+    height: 46px;
+    font-size: 16px;
+}
+.search-bar button {
+    height: 46px;
+}
+
+/* Order Section */
+.order-section {
+    padding: 40px 0;
+}
+.order-box {
+    background: #f4f8ff;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Savings Section */
+.savings-section {
+    padding: 40px 0;
+}
+.save-box {
+    background: #f6edff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+}
+.save-box h1 {
+    color: #7b3fe4;
+    font-size: 48px;
+    font-weight: bold;
+}
+.features li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+</style>
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">MedStore Pharmacy</a>
-            </div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">truemeds</a>
+</div>
 
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">Vitamins & Supplements</a></li>
-                            <li><a href="#">Personal Care</a></li>
-                            <li><a href="#">Prescriptions</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#">Wellness Products</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                
-                <form class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search products...">
-                    </div>
-                    <button type="submit" class="btn btn-default">Search</button>
-                </form>
+<div class="collapse navbar-collapse" id="nav">
+<ul class="nav navbar-nav">
+<li><a href="#">Medicines</a></li>
+<li><a href="#">Personal Care</a></li>
+<li><a href="#">Health Conditions</a></li>
+<li><a href="#">Vitamins & Supplements</a></li>
+<li><a href="#">Diabetes Care</a></li>
+<li><a href="#">Healthcare Devices</a></li>
+<li><a href="#">Homeopathic</a></li>
+<li><a href="#">Health Guide</a></li>
+</ul>
 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign Up</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<ul class="nav navbar-nav navbar-right">
+<li><a href="#">Download App</a></li>
+<li><a href="#">Login / Signup</a></li>
+<li><a href="#">🛒</a></li>
+</ul>
+</div>
+</div>
+</nav>
 
-    <!-- Main Content Section (Centered using container) -->
-    <div class="container main-content">
-        <h1 class="text-center">Featured Products</h1>
-        <p class="text-center">Browse our top wellness and medical products.</p>
+<!-- HERO -->
+<section class="hero text-center">
+<div class="container">
+<h1>Say GoodBye to high medicine prices</h1>
+<p>Compare prices and save up to 51%</p>
 
-        <!-- First Row of Product Categories -->
-        <div class="row">
-            <!-- Product 1 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Vitamins</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="Vitamin C Bottle" class="img-responsive product-img">
-                        <h4>Vitamin C Supplements</h4>
-                        <p>Boost your immune system with our high-quality Vitamin C tablets.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 2 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Pain Relief</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="Pain Relief Medication" class="img-responsive product-img">
-                        <h4>Advanced Pain Medication</h4>
-                        <p>Fast-acting relief for headaches and muscle aches.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 3 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Skin Care</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="Moisturizer Bottle" class="img-responsive product-img">
-                        <h4>Hydrating Moisturizer</h4>
-                        <p>Keep your skin soft and hydrated all day long.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="search-bar">
+<form class="form-inline">
+<div class="form-group" style="width:75%">
+<input type="text" class="form-control" style="width:100%" placeholder="Search for GLYCOMET">
+</div>
+<button type="submit" class="btn btn-primary">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+</form>
+</div>
+</div>
+</section>
 
-        <!-- Second Row of Product Categories -->
-        <div class="row">
-            <!-- Product 4 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">First Aid</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="First Aid Kit" class="img-responsive product-img">
-                        <h4>Comprehensive First Aid Kit</h4>
-                        <p>Essential supplies for minor injuries and emergencies.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 5 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Sleep Aids</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="Sleep Aid Pills" class="img-responsive product-img">
-                        <h4>Natural Sleep Aid</h4>
-                        <p>Drift off easily and wake up refreshed with our natural formula.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Product 6 -->
-            <div class="col-sm-6 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">Dental Care</div>
-                    <div class="panel-body">
-                        <img src="https://via.placeholder.com" alt="Toothpaste Box" class="img-responsive product-img">
-                        <h4>Whitening Toothpaste</h4>
-                        <p>Achieve a brighter smile with our advanced whitening formula.</p>
-                        <a href="#" class="btn btn-primary">View Details</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!-- ORDER SECTION -->
+<section class="order-section">
+<div class="container text-center">
+<h4>PLACE YOUR ORDER VIA</h4>
+<br>
+<div class="row">
+<div class="col-sm-6">
+<div class="order-box">
+📞 Call <strong>09240250346</strong> to place order
+</div>
+</div>
+<div class="col-sm-6">
+<div class="order-box">
+📄 Upload a <strong>prescription</strong>
+</div>
+</div>
+</div>
+</div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 MedStore Pharmacy | Designed by [Your Name]</p>
-        </div>
-    </footer>
+<!-- SAVINGS -->
+<section class="savings-section">
+<div class="container">
+<div class="row">
+<div class="col-md-4">
+<div class="save-box">
+<h1>Save 51%</h1>
+<p>With substitute medicines</p>
+</div>
+</div>
 
-    <!-- Link jQuery and Bootstrap JS from CDNs (required for dropdowns and navigation toggle) -->
-    <script src="https://code.jquery.com"></script>
-    <script src="https://cdn.jsdelivr.net"></script>
+<div class="col-md-8">
+<h3>Substitutes are the smarter choice</h3>
+<ul class="features">
+<li>✔ FDA and GMP certified medicines</li>
+<li>✔ Exact same salt composition</li>
+<li>✔ Up to 51% cheaper</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 TrueMeds UI Clone | Educational Use Only</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </body>
 </html>
 ```
