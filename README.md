@@ -266,8 +266,7 @@ footer {
 ```
 
 ## OUTPUT:
-<img width="1898" height="1025" alt="image" src="https://github.com/user-attachments/assets/f19de291-953b-457a-a8a3-a1668cadcb88" />
-
+![WhatsApp Image 2026-02-10 at 9 20 10 AM](https://github.com/user-attachments/assets/992b2bc4-f0e8-440b-9e3b-241ce6898ff2)
 
 ## RESULT:
 A responsive and visually appealing Pharmacy web page using Bootstrap is designed successfully.
